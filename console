@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+use App\StartCommand;
+use Symfony\Component\Console\Application;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Create the Application
+$application = new Application('Proxx game');
+
+// Register all commands
+$application->add(new StartCommand);
+
+// Run it
+$application->run();

@@ -1,0 +1,4 @@
+#!/bin/zsh
+vendor/bin/phpunit --testsuite=unit,feature --testdox
+#XDEBUG_MODE=coverage vendor/bin/phpunit --testsuite=unit,feature --testdox --coverage-html ./coverage
+#XDEBUG_MODE=debug XDEBUG_TRIGGER=1 vendor/bin/phpunit --testsuite=unit --testdox
